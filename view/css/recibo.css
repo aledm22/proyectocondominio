@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Estilos generales */
+body {  
+  font-family:  poppins, sans-serif;  
+  margin: 0;  
+  display: flex; /* Use flexbox for layout */  
+  transition: background-color 0.3s ease; /* Smooth transition for theme change */  
+    
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+  background-color: #fff  
+  
+}  
+
+/* Style the toggle container */
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Style the toggle button */
+#dark-mode-toggle {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dark-mode-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #000; /* Dark background */
+  color: #fff; /* Light text */
+}
+
+body.dark-mode .sidebar {
+  background-color: #333; /* Dark sidebar background */
+}
+
+body.dark-mode .sidebar a {
+  color: #eee; /* Light text in dark sidebar */
+}
+
+body.dark-mode .sidebar a:hover {
+  background-color: #444; /* Slightly darker when hovered */
+}
+
+body.dark-mode .module-card {
+  background-color: #555; /* Darker background for module cards */
+  border: 1px solid #777; /* Border color */
+}
+
+body.dark-mode .payment-form {
+  background-color: #222; /* Dark background for payment form */
+  color: #fff; /* Light text */
+}
+
+body.dark-mode .payment-form input {
+  background-color: #444; /* Darker input fields */
+  color: #fff; /* Light text for input fields */
+  border: 1px solid #666; /* Border color for inputs */
+}
+
+
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #0878e0;
+  color: white;
+  padding: 20px;
+ 
+  transition: max-height 0.3s ease; 
+  height: 100vh; 
+  overflow-y: auto; 
+  border-color: #555;
+}
+
+.sidebar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* Styles for closed sidebar */
+.sidebar.closed {
+  max-height: 0; /* Collapse sidebar */
+}
+
+/* Logo and Toggle Button */
+.logo-container {
+  display: flex;
+  justify-content: space-between; /* Distribute logo and button */
+  align-items: center; /* Vertically align */
+  margin-bottom: 20px;
+}
+.tabla-principal {
+    border-collapse: collapse;
+    width: 120%;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio debajo de la tabla */
+    margin-left: 70px;
+    margin-top: 30px;
+
+  }
+  
+  .cabecera {
+    background-color: #0878e0; /* Color azul verdoso */
+    color: white;
+    font-weight: bold;
+    text-align: center; /* Centra el texto en las cabeceras */
+  }
+  
+  .fila-par {
+    background-color: #f2f2f2;
+  }
+  
+  .celda-monto {
+    text-align: right;
+  }
+  
+  .tabla-principal th,
+  .tabla-principal td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .content{
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+ 

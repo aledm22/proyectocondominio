@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recibo condominio</title>
+  <link rel="stylesheet" href="css/servicios.css">
+  <link rel="shortcut icon" href="imag/building_auzzn3wxu3v5.svg" type="image/x-icon">
+</head>
+<body>
+  <div class="toggle-container">
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+      <img src="https://cdn.icon-icons.com/icons2/2751/PNG/96/dark_mode_half_moon_icon_176153.png" alt="Dark mode icon">
+    </button>
+  </div>
+  <div class="sidebar">
+    <div class="logo-container">
+      <div class="logo">TuCondominio</div>
+    </div>
+    <ul id="sidebarList">
+      <li><a href="principal.html">Estado de cuenta propietario</a></li>
+      <li><a href="recibo.html">Recibo de condominio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="agente.html">Contactar con agente</a></li>
+      <li><a href="inicio.html">Cerrar Sesion</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h1>SERVICIOS</h1>
+    <div class="course-name">Residencia San Miguel 33-B</div>
+
+  
+    <div class="service-form">
+      <h2>Solicitar Puesto de Estacionamiento Adicional</h2>
+      <form id="parkingForm">
+        <label for="parkingRequest">Desea solicitar un puesto de estacionamiento adicional por $5 mensual?</label>
+        <select id="parkingRequest" required>
+          <option value="">Seleccione una opción</option>
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    
+    <div class="service-form">
+      <h2>Alquilar el Salón de Fiesta</h2>
+      <form id="hallForm">
+        <label for="hallRequest">Desea alquilar el salón de fiesta por $50?</label>
+        <select id="hallRequest" required>
+          <option value="">Seleccione una opción</option>
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+        </select>
+        <label for="hallDate">Seleccione la fecha de reserva:</label>
+        <input type="date" id="hallDate" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/servicios.js"></script>
+</body>
+</html>

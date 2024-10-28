@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@example.com"
+    }
+  ],
+  "registro": [
+    {},
+    {
+      "id": "ccb6",
+      "username": "michi",
+      "email": "michi@gmail.com",
+      "password": "22"
+    }
+  ]
+ 
+
+
+}

@@ -1,0 +1,9 @@
+<!-- admin/users.html -->
+<h1>Usuarios</h1>
+<ul>
+  {{#users}}
+  <li>
+    <a href="/admin/users/{{_id}}">{{username}}</a>
+  </li>
+  {{/users}}
+</ul>

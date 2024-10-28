@@ -1,0 +1,9 @@
+<!-- admin/user.html -->
+<h1>Usuario</h1>
+<p>Nombre de usuario: {{username}}</p>
+<p>Correo electrónico: {{email}}</p>
+<form action="/admin/users/{{_id}}" method="post">
+  <input type="text" name="username" value="{{username}}">
+  <input type="email" name="email" value="{{email}}">
+  <button type="submit">Guardar cambios</button>
+</form>

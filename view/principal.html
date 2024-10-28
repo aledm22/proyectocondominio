@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estado de Cuenta </title>
+  <link rel="stylesheet" href="css/principal.css">
+  <link rel="shortcut icon" href="imag/building_auzzn3wxu3v5.svg" type="image/x-icon">
+</head>
+<body>
+  <body>
+    <div class="toggle-container">
+     
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+        <img src="https://cdn.icon-icons.com/icons2/2751/PNG/96/dark_mode_half_moon_icon_176153.png" alt="Dark mode icon">
+      </button>
+    </div>
+    <div class="sidebar">
+      <div class="logo-container">
+        <div class="logo">TuCondominio</div>
+        
+      </div>
+      <ul id="sidebarList">
+        <li><a href="principal.html">Estado de cuenta propietario</a></li>
+        <li><a href="recibo.html">Recibo de condominio</a></li>
+        <li><a href="servicios.html">Servicios </a></li>
+        <li><a href="agente.html">Contactar con agente</a></li>
+        <li><a href="inicio.html">Cerrar Sesion</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Pagos</h1>
+      <div class="course-name">Residencia San Miguel 33-B </div>
+      <div class="dollar-v" id="dollar-value"></div>
+      <div class="modules">
+        <div class="module  module-card">
+          <div class="module-header">
+            <h3>Enero</h3>
+            <div class="date">2024</div>
+            
+            <button class="approve-button">Pendiente</button>
+          </div>
+          <div class="module-content">
+            
+          </div>
+          <div class="payment-form" style="display: none;">
+            <h2>Información de pago</h2>
+            
+            <form>
+              <label for="phone">Número de teléfono a transferir: 04241587783</label>
+              <input type="tel" class="phone" placeholder="Ingrese el numero del que transfirió" >
+        
+              <label for="bank">Banco Receptor: BANESCO</label>
+              <input type="text" class="bank" placeholder="Ingrese el banco desde el que realizo el pago">
+        
+              <label for="payment-method">Método de pago:</label>
+              <select class="payment-method" required>
+                <option value="">Seleccione un método de pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="pago-movil">Pago Móvil</option>
+              </select>
+        
+              <label for="amount">Monto a cancelar: 20$</label>
+              <input type="number" class="amount" required >
+            
+        
+              <label for="reference">Número de referencia:</label>
+              <input type="text" class="reference" placeholder="ultimos 4 digitos" >
+        
+              <label for="payment-date">Fecha de pago:</label>
+              <input type="date" class="payment-date" required>
+        
+              <div class="button-container">
+                <button type="submit">Enviar</button>
+                <button class="close-button">X</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="module  module-card1">
+          <div class="module-header">
+            <h3>Febrero</h3>
+            <div class="date">2024</div>
+            
+            <button class="approve-button">PENDIENTE</button>
+          </div>
+          <div class="module-content">
+           
+          </div>
+          <div class="payment-form" style="display: none;">
+            
+            <h2>Información de pago</h2>
+            <form>
+              <label for="phone">Número de teléfono:</label>
+              <input type="tel" class="phone" required>
+        
+              <label for="bank">Banco:</label>
+              <input type="text" class="bank" required>
+        
+              <label for="payment-method">Método de pago:</label>
+              <select class="payment-method" required>
+                <option value="">Seleccione un método de pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="pago-movil">Pago Móvil</option>
+              </select>
+        
+              <label for="amount">Monto:</label>
+              <input type="number" class="amount" required>
+        
+              <label for="reference">Número de referencia:</label>
+              <input type="text" class="reference" required>
+        
+              <label for="payment-date">Fecha de pago:</label>
+              <input type="date" class="payment-date" required>
+        
+              <div class="button-container">
+                <button type="submit">Enviar</button>
+                <button class="close-button">X</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="module  module-card2">
+          <div class="module-header">
+            <h3>Marzo</h3>
+            <div class="date">2024</div>
+            
+            <button class="approve-button">PENDIENTE</button>
+          </div>
+          <div class="module-content">
+         
+          </div>
+          <div class="payment-form" style="display: none;">
+            <h2>Información de pago</h2>
+           
+            <form>
+              <label for="phone">Número de teléfono:</label>
+              <input type="tel" class="phone" required>
+        
+              <label for="bank">Banco:</label>
+              <input type="text" class="bank" required>
+        
+              <label for="payment-method">Método de pago:</label>
+              <select class="payment-method" required>
+                <option value="">Seleccione un método de pago</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="pago-movil">Pago Móvil</option>
+              </select>
+        
+              <label for="amount">Monto:</label>
+              <input type="number" class="amount" required>
+        
+              <label for="reference">Número de referencia:</label>
+              <input type="text" class="reference" required>
+        
+              <label for="payment-date">Fecha de pago:</label>
+              <input type="date" class="payment-date" required>
+        
+              <div class="button-container">
+                <button type="submit">Enviar</button>
+                <button class="close-button">X</button>
+              </div>
+            </form>
+  </div>
+</div>
+<div class="module  module-card3">
+  <div class="module-header">
+    <h3>Abril</h3>
+    <div class="date">2024</div>
+    
+    <button class="approve-button">PENDIENTE</button>
+  </div>
+  <div class="module-content">
+    
+  </div>
+  <div class="payment-form" style="display: none;">
+    <h2>Información de pago</h2>
+  
+    <form>
+      <label for="phone">Número de teléfono:</label>
+      <input type="tel" class="phone" required>
+
+      <label for="bank">Banco:</label>
+      <input type="text" class="bank" required>
+
+      <label for="payment-method">Método de pago:</label>
+      <select class="payment-method" required>
+        <option value="">Seleccione un método de pago</option>
+        <option value="efectivo">Efectivo</option>
+        <option value="pago-movil">Pago Móvil</option>
+      </select>
+
+      <label for="amount">Monto:</label>
+      <input type="number" class="amount" required>
+
+      <label for="reference">Número de referencia:</label>
+      <input type="text" class="reference" required>
+
+      <label for="payment-date">Fecha de pago:</label>
+      <input type="date" class="payment-date" required>
+
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+        <button class="close-button">X</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="module  module-card4">
+  <div class="module-header">
+    <h3>Mayo</h3>
+    <div class="date">2024</div>
+    <div class="status">PENDIENTE</div>
+    <button class="approve-button">APROBADO</button>
+  </div>
+  <div class="module-content">
+   
+  </div>
+  <div class="payment-form" style="display: none;">
+    <h2>Información de pago</h2>
+   
+    <form>
+      <label for="phone">Número de teléfono:</label>
+      <input type="tel" class="phone" required>
+
+      <label for="bank">Banco:</label>
+      <input type="text" class="bank" required>
+
+      <label for="payment-method">Método de pago:</label>
+      <select class="payment-method" required>
+        <option value="">Seleccione un método de pago</option>
+        <option value="efectivo">Efectivo</option>
+        <option value="pago-movil">Pago Móvil</option>
+      </select>
+
+      <label for="amount">Monto:</label>
+      <input type="number" class="amount" required>
+
+      <label for="reference">Número de referencia:</label>
+      <input type="text" class="reference" required>
+
+      <label for="payment-date">Fecha de pago:</label>
+      <input type="date" class="payment-date" required>
+
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+        <button class="close-button">X</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="module  module-card5">
+  <div class="module-header">
+    <h3>Junio</h3>
+    <div class="date">2024</div>
+    <div class="status">PENDIENTE</div>
+    <button class="approve-button">APROBADO</button>
+  </div>
+  <div class="module-content">
+    
+  </div>
+  <div class="payment-form" style="display: none;">
+    <h2>Información de pago</h2>
+    
+     <form>
+      <label for="phone">Número de teléfono:</label>
+      <input type="tel" class="phone" required>
+
+      <label for="bank">Banco:</label>
+      <input type="text" class="bank" required>
+
+      <label for="payment-method">Método de pago:</label>
+      <select class="payment-method" required>
+        <option value="">Seleccione un método de pago</option>
+        <option value="efectivo">Efectivo</option>
+        <option value="pago-movil">Pago Móvil</option>
+      </select>
+
+      <label for="amount" >Monto:</label>
+      <input type="number" class="amount" required>
+      
+
+      <label for="reference">Número de referencia:</label>
+      <input type="text" class="reference" required>
+
+      <label for="payment-date">Fecha de pago:</label>
+      <input type="date" class="payment-date" required>
+
+      <div class="button-container">
+        <button type="submit">Enviar</button>
+        <button class="close-button">X</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+</body>
+<script src="js/principal.js"></script>
+</body>
+</html>

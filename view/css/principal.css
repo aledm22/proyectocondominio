@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  display: flex;
+  transition: background-color 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+/* Style the toggle container */
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Style the toggle button */
+#dark-mode-toggle {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dark-mode-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode .sidebar {
+  background-color: #333;
+}
+
+body.dark-mode .sidebar a {
+  color: #eee;
+}
+
+body.dark-mode .sidebar a:hover {
+  background-color: #444;
+}
+
+body.dark-mode .module-card {
+  background-color: #555;
+  border: 1px solid #777;
+}
+
+body.dark-mode .payment-form {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .payment-form input {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #0878e0;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  height: 200;
+  overflow-y: auto;
+  border-color: #555;
+}
+
+.sidebar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* Stylo de cierre */
+.sidebar.closed {
+  max-height: 0;
+}
+
+/* Logo and Toggle Button */
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.course-name {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.modules {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.module {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.module-card {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module-card1 {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module-card2 {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.module-card3 {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module-card4 {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module-card5 {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.module-header h3 {
+  margin: 0;
+}
+
+.payment-method {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+}
+
+.module-header .date,
+.module-header .status {
+  font-size: 0.9em;
+}
+
+.module-content p {
+  margin-bottom: 5px;
+}
+
+#dollar-v {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+}
+
+.payment-form  {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+.payment-form1  {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.payment-form h2 {
+  margin-top: 0;
+}
+
+.payment-form label {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 200;
+}
+
+.payment-form input[type="tel"],
+.payment-form input[type="text"],
+.payment-form input[type="number"],
+.payment-form input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 7px;
+  border: 1px solid #ccc;
+}
+
+.payment-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+
+  .module {
+    width: 100%;
+    display: block;
+  }
+
+  .module-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #dark-mode-toggle {
+    padding: 5px;
+  }
+
+  .payment-form {
+    width: 90%;
+  }
+}
+
